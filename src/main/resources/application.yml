@@ -1,0 +1,16 @@
+server:
+  port: 9999
+
+spring:
+  profiles:
+    active: @profiles.active@
+
+  datasource:
+    hikari:
+      pool-name: HikariCP-H2-Pool
+      minimum-idle: 5
+      maximum-pool-size: 20
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      idle-timeout: 600000
+      connection-test-query: SELECT 1
