@@ -1,9 +1,11 @@
 server:
   port: 9999
-
 spring:
   profiles:
     active: @profiles.active@
+
+  application:
+    name: @project.name@
 
   datasource:
     hikari:
@@ -14,3 +16,6 @@ spring:
       connection-timeout: 30000
       idle-timeout: 600000
       connection-test-query: SELECT 1
+
+logging:
+  config: classpath:logback.xml

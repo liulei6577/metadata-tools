@@ -2,3 +2,4 @@
 /target/
 *.iml
 /h2db/
+/logs/
